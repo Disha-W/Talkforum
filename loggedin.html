@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="talkForum.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana,Geneva,Tahoma,sans-serif;
+            background:url(ppl.jpg)no-repeat;
+            background-size: cover;
+            }
+        .login
+        {
+            color: aliceblue;
+        }
+    </style>
+    <title>loggedin</title>
+</head>
+<body>
+    <script type="text/javascript" src="talkforum.js"></script>
+    <div id="div1" class="divBox">
+        <ul type="none">
+            <li><a href="talkForum.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Sign up</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="login1.php">Join us</a></li>
+        </ul>
+    </div>
+    <pre>
+
+
+
+        
+    </pre>
+    <div class="login">
+        <h1 align="center">Logged In successfully!!</h1>
+    <fieldset>
+        <legend align="center">Enter valid details and Start new Discussion</legend>
+        <table width="60%" align="center" >
+            <form name="RegForm" action="/submit.php" method="post">
+                <tr>
+                    <br>
+                    <td width="50%" align="left" color="white" >userName:</td>
+                    <td width="50%" align="justify"><input type="text" id="fname" required /></td>
+                </tr>
+                <tr>
+                    <br>
+                    <td width="50%" align="left">Title of Topic:</td>
+                    <td width="50%" align="justify"><input type="text" required /></td>
+                </tr>   
+                </form> 
+        </table>
+        
+    </fieldset>
+    </div>
+    
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">X</div>
+            <td id="content" align="center"><textarea rows="8"></textarea></td>
+            <!-- <button onclick=" " value="Submit">Submitted successfully</button> -->
+            <input type="button" align="center" padding="border" onclick="location.href='talkForum.html';" value="submit">
+        </div>
+      </div>
+       
+      <button onclick="togglePopup()">ok</button>
+      
+</body>
+</html>

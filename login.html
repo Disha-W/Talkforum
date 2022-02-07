@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>
+Login page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="talkForum.css" rel="stylesheet">
+<style>
+    body{
+            font-family: fantasy;
+            color: aliceblue;
+            background: url(ppl.jpg)no-repeat;
+            background-size:cover;
+        }
+</style>
+
+
+<link rel="stylesheet"type="text/css" href="logincss.css">
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "swati@id" && form.pswrd.value == "swati")
+  {
+    window.open('loggedin.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("INVALID CREDENTIALS \n DEMO SITE\nUSERNAME:swati@id \nPASSWORD:swati")/*displays error message*/
+  }
+}
+</script>
+</head>
+<body>
+    <div id="div1" class="divBox">
+        <ul type="none">
+            <li><a href="talkForum.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Sign up</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="login1.php">Join us</a></li>
+        </ul>
+    </div>
+<form>
+<div class="login-form"> 
+<div class="header">
+<h3>LOGIN</h3>
+
+</div>
+
+Username<br> <input type="text" name="userid" placeholder="Email Id"/><br><br>
+
+Password<br> <input type="password" name="pswrd"placeholder="Password"/><br><br>
+
+
+
+
+<input type="submit" onclick="check(this.form)" value="Login" /><br>
+<div class="signup">
+<font-size= "2">New Member? <a href=#>Register now</a></font><br>
+</div>
+
+</div>
+
+
+
+
+   
+
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  margin: 0 px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url(ppl.jpg) no-repeat;
+  background-size: cover;
+}
+.login-form {
+  width: 300px;
+  padding: 35px;
+  margin: 120px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+.header h3 {
+  padding: 30px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  border: 1px solid white;
+  background: none;
+  padding: 9px;
+  color: white;
+  margin: 30px white;
+  text-align: center;
+  width: 170px;
+  border-radius: 20px;
+  outline: none;
+}
+.login-form input[type="submit"] {
+  padding: 7px 20px;
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  width: 170px;
+  border-radius: 20px;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border: 2px solid rgb(128, 0, 122);
+}
+.login-form input[type="submit"]:hover {
+  border: 0px;
+  color: rgb(128, 0, 122);
+  box-shadow: 3px 3px 8px rgb(128, 0, 122);
+  cursor: pointer;
+}
